@@ -1,0 +1,30 @@
+CREATE DATABASE DBFirstDemoDB
+GO
+
+USE  DBFirstDemoDB
+GO
+
+CREATE TABLE Employee
+(
+[EmpID] [int] NOT NULL PRIMARY KEY IDENTITY(1,1),
+[LoginID] [nvarchar](256) NOT NULL,
+[JobTitle] [nvarchar](50) NOT NULL,
+[BirthDate] [date] NOT NULL,
+[MaritalStatus] [nchar](1) NOT NULL,
+[Gender] [nchar](1) NOT NULL
+)
+
+GO
+
+INSERT INTO Employee ([LoginID],[JobTitle],[BirthDate],[MaritalStatus],[Gender])
+values('adventure-works\ken0','Chief Executive Officer','1969-01-29','S','M')
+go
+INSERT INTO Employee ([LoginID],[JobTitle],[BirthDate],[MaritalStatus],[Gender])
+values('adventure-works\ken0','Chief Executive Officer','1969-01-29','S','M')
+go
+INSERT INTO Employee ([LoginID],[JobTitle],[BirthDate],[MaritalStatus],[Gender])
+values('adventure-works\ken0','Chief Executive Officer','1969-01-29','S','M')
+go
+INSERT INTO Employee ([LoginID],[JobTitle],[BirthDate],[MaritalStatus],[Gender])
+values('adventure-works\ken0','Chief Executive Officer','1969-01-29','S','M')
+go
